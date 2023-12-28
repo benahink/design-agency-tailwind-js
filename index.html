@@ -6,22 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Responsive Tailwind CSS landing template">
     <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="32x32">
+    <title>Minimal Tailwind CSS Landing Page</title>
 
-    <title>Mezino - Minimal Tailwind CSS Landing Page</title>
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
     <!-- Tailwind CSS core file -->
     <link href="assets/css/tailwind.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
+<body class="bg-[url('../images/bg-pattern.png')] bg-no-repeat">
 
+    <!-- NAVIGATION -->
+    <div class="flex flex-col">
+        <nav id="nav" class="py-4 md:border-b-0 border-b" role="navigation">
+            <div class="container flex flex-wrap items-center md:flex-nowrap">
+                <a href="/" class="flex">
+                    <i class='bx bxs-bolt-circle text-black text-[42px]'></i>
+                </a>
+                <div class="ml-auto md:hidden">
+                    <button class="flex items-center rounded" type="button" onclick="menuToggle()">
+                        <i class='bx bx-menu-alt-right text-3xl'></i>
+                    </button>
+                </div>
 
-<body>
-    <div class="flex h-screen justify-center items-center">
-        <h1 class="text-5xl font-bold text-blue-500 uppercase text-center">Mezino Starter Files</h1>
+                <!-- menu-items -->
+                <div id="menu" class="w-full md:w-auto h-0 transition-all ease-out duration-300 md:transition-none md:flex-grow md:flex md:items-center opacity-0 md:opacity-100">
+                    <ul id="menu-items" class="flex flex-col duration-300 ease-out sm:transition-none md:flex-row ml-auto mt-5 md:mt-0 items-center">
+                        <li><a href="/" class="lg:px-6 md:mb-5 font-medium font-secondary black text-blue-500 p-3 uppercase text-sm/[2.25rem]">Home</a></li>
+                        <li><a href="#" class="lg:px-6 font-medium font-secondary black text-black/70 p-3 uppercase text-sm/[2.25rem]">Services</a></li>
+                        <li><a href="#" class="lg:px-6 font-medium font-secondary black text-black/70 p-3 uppercase text-sm/[2.25rem]">Blog</a></li>
+                        <li><a href="#" class="lg:px-6 font-medium font-secondary black text-black/70 p-3 uppercase text-sm/[2.25rem]">About</a></li>
+                        <li><a href="#" class="lg:px-6 font-medium font-secondary black text-black/70 p-3 uppercase text-sm/[2.25rem]">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
-</body>
 
+    <!-- HERO SECTION -->
+    <section class="section py-16">
+        <div class="container">
+            <div class="lg:flex justify-center">
+                <div class="lg:w-2/3 mx-2">
+                    <div class="text-center">
+                        <h1 class="text-4xl font-semibold leading-[50px] tracking-wide text-transparent bg-clip-text bg-gradient-to-l from-blue-400 to-purple-900 mb-10">Find your Dev <span class="italic font-['Outfit'] text-gray-500">Ambience</span> here.</h1>
+                        <p class="text-base text-gray-500 ">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
 </html>

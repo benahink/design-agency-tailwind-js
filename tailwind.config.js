@@ -2,7 +2,11 @@
 module.exports = {
   content: ['*', './assets/css/tailwind.css'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'outfit': '"Outfit',
+      }
+    },
   },
   plugins: [],
 }
