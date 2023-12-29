@@ -14,6 +14,11 @@
     <!-- Tailwind CSS core file -->
     <link href="assets/css/tailwind.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
 </head>
 <body class="bg-[url('../images/bg-pattern.png')] bg-no-repeat">
 
@@ -50,8 +55,8 @@
             <div class="lg:flex justify-center">
                 <div class="lg:w-2/3 mx-2">
                     <div class="text-center">
-                        <h1 class="text-4xl font-semibold leading-[50px] tracking-wide text-transparent bg-clip-text bg-gradient-to-l from-blue-400 to-purple-900 mb-10">Find your Dev <span class="italic font-['Outfit'] text-gray-500">Ambience</span> here.</h1>
-                        <p class="text-base text-gray-500 ">
+                        <h1 class="text-4xl font-semibold leading-[50px] tracking-wide text-transparent bg-clip-text bg-gradient-to-l from-blue-400 to-purple-900 mb-10">Find your Dev <span class=" font-['Carattere'] text-gray-600">Ambience</span> here.</h1>
+                        <p class="text-base text-gray-500 mx-5">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -204,6 +209,89 @@
             </div>
         </div>
     </section>
+
+    <!-- SEE MORE BUTTON -->
+    <div class="flex justify-center mt-8">
+        <a href="#" class="py-4 px-7 rounded text-md font-medium bg-blue-500 text-white">See More</a>
+    </div>
+
+    <!-- FEATURES SECTION -->
+    <section class="section py-10">
+        <div class="container">
+            <div class="grid lg:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="p-5">
+                        <div class="text-5xl text-blue-500">
+                            <i class='bx bx-code-curly'></i>
+                        </div>
+                        <h4 class="uppercase text-base my-3">Branding</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="p-5">
+                        <div class="text-5xl text-blue-500">
+                            <i class='bx bxs-crop'></i>
+                        </div>
+                        <h4 class="uppercase text-base my-3">Customization</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="p-5">
+                        <div class="text-5xl text-blue-500">
+                            <i class='bx bx-mobile-alt'></i>
+                        </div>
+                        <h4 class="uppercase text-base my-3">Responsive Design</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t py-8">
+        <div class="container">
+            <div class="flex">
+                <div class="w-full">
+                    <div class="text-center">
+                        <a href="#" class="text-6xl text-black">
+                            <i class='bx bxs-bolt-circle text-black'></i>
+                        </a>
+                        <h4 class="font-bold text-lg mt-2">Dev <span class="font-['Carattere'] text-gray-600 text-3xl">Ambience</span></h4>
+                        <ul class="flex justify-center  gap-3 mt-8">
+                            <li><a href="#" class="w-11 h-11 rounded flex items-center justify-center text-lg bg-gray-300 text-black hover:text-white hover:bg-blue-500">
+                                <i class="bx bxl-dribbble">
+                            </a></li>
+                            <li><a href="#" class="w-11 h-11 rounded flex items-center justify-center text-lg bg-gray-300 text-black hover:text-white hover:bg-blue-500">
+                                <i class="bx bxl-twitter">
+                            </a></li>
+                            <li><a href="#" class="w-11 h-11 rounded flex items-center justify-center text-lg bg-gray-300 text-black hover:text-white hover:bg-blue-500">
+                                <i class="bx bxl-github">
+                            </a></li>
+                            <li><a href="#" class="w-11 h-11 rounded flex items-center justify-center text-lg bg-gray-300 text-black hover:text-white hover:bg-blue-500">
+                                <i class='bx bxl-medium'></i>
+                            </a></li>
+                        </ul>
+                        <p class="text-muted mt-8">
+                            @<script>document.write(new Date().getFullYear()</script>
+                            Design Agnecy by Beni Designs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- app js -->
     <script type="text/javascript" src="assets/js/app.js"></script>
